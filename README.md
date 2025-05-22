@@ -12,5 +12,6 @@ So let's see how this goes.
 To cross-compile for a Raspberry Pi:
 
 ```bash
-$ cross build --release --target=aarch64-unknown-linux-gnu
+export DOCKER_DEFAULT_PLATFORM=linux/x86_64/v2
+cross build --release --target=aarch64-unknown-linux-gnu
 ```
